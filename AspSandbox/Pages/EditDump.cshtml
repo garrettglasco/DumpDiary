@@ -1,0 +1,53 @@
+﻿@page
+@model EditDumpModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Edit dump</h1>
+</div>
+
+<form method="post" asp-page-handler="NewDump">
+    <div>
+        <label asp-for="@Model.Shape"></label>
+        <select asp-for="Shape">
+            <option value="LUMPY SAUSAGE">LUMPY SAUSAGE</option>
+            <option value="CRACKED SAUSAGE">CRACKED SAUSAGE</option>
+            <option value="SMOOTH SAUSAGE">SMOOTH SAUSAGE</option>
+            <option value="SOFT SAUSAGE">SOFT SAUSAGE</option>
+            <option value="CHOCOLATE WATER">CHOCOLATE WATER</option>
+            <option value="SMALL HARD LARDS">SMALL HARD LARDS</option>
+        </select>
+        <span asp-validation-for="Shape"></span>
+    </div>
+    <div>
+        <label asp-for="Color"></label>
+        <select asp-for="Color">
+            <option value="BROWN">BROWN</option>
+            <option value="PEANUT BUTTER BROWN">PEANUT BUTTER BROWN</option>
+            <option value="SAGE GREEN">SAGE GREEN</option>
+            <option value="DARK GREEN">DARK GREEN</option>
+            <option value="BRIGHT GREEN">BRIGHT GREEN</option>
+            <option value="BLACK">BLACK</option>
+            <option value="BLOODY">BLOODY</option>
+        </select>
+        <span asp-validation-for="Color"></span>
+    </div>
+    <div>
+        <label asp-for="Amount"></label>
+        <select asp-for="Amount">
+            <option value="BABY POOP">BABY POOP</option>
+            <option value="SMALL">SMALL</option>
+            <option value="MEDIUM">MEDIUM</option>
+            <option value="LARGE">LARGE</option>
+            <option value="VARY LARGE">VARY LARGE</option>
+        </select>
+        <span asp-valid
+        <span asp-validation-for="Amount"></span>
+    </div>
+
+
+    <div>
+        <button type="submit">update</button>
+    </div>
+</form>

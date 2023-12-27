@@ -1,0 +1,41 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #808080; /* Blue color, you can customize */
+    color: #ffffff; /* Text color, you can customize */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    /* Change background color on hover */
+    .button-link:hover {
+        background-color: #0056b3; /* Darker shade of blue, you can customize */
+    }
+
+.button-container {
+    display: flex;
+}
+
+    .button-container button {
+        margin-right: 10px; /* Adjust the margin as needed */
+    }

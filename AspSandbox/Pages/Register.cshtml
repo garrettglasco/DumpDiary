@@ -1,0 +1,49 @@
+﻿@page
+@model AspSandbox.Pages.RegisterModel
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">Create an account</h1>
+</div>
+
+<form method="post" asp-page-handler="ProfileModel">
+    <div>
+        <label asp-for="Username">*UserName</label>
+        <input asp-for="@Model.ActiveUser.UserName" />
+        <span asp-validation-for="Username"></span>
+    </div>
+    <div>
+        <label asp-for="Password">*Password</label>
+        <input asp-for="@Model.ActiveUser.Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-for="@Model.ActiveUser.Age" />
+        <span asp-validation-for="Age"></span>
+    </div>
+    <div>
+        <label asp-for="Gender"></label>
+        <select id="Gender" name="Gender">
+            <option value="MALE">MALE</option>
+            <option value="FEMALE">FEMALE</option>
+            <option value="N/A">N/A</option>
+        </select>
+        <span asp-validation-for="Gender"></span>
+    </div>
+    <div>
+        <label asp-for="FirstName"></label>
+        <input asp-for="@Model.ActiveUser.FirstName" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+    <div>
+        <label asp-for="LastName"></label>
+        <input asp-for="@Model.ActiveUser.LastName" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+
+
+    <div>
+        <button type="submit">Create</button>
+    </div>
+</form>

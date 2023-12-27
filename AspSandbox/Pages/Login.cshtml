@@ -1,0 +1,25 @@
+﻿@page
+@model AspSandbox.Pages.LoginModel
+@{
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login in now</h1>
+</div>
+
+<form method="post">
+    <div>
+        <label asp-for="Username">Username:</label>
+        <input asp-for="Username" />
+    </div>
+
+    <div>
+        <label asp-for="Password">Password:</label>
+        <input asp-for="Password" type="password" />
+    </div>
+
+    <button type="submit">Login</button>
+</form>
+
+<p>Don't have an account? <a asp-page="/Register">Register</a></p>
